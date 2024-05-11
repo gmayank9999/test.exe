@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Materials Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Building Materials Store</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Cart <span id="cartCounter">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to Our Building Materials Store</h2>
+            <p>Your one-stop destination for all your construction and interior designing needs.</p>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="product-container" id="productContainer">
+                <!-- Products will be added dynamically using JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <p>"Great quality and fast delivery. Will definitely shop here again!"</p>
+                    <span>- John Doe</span>
+                </div>
+                <div class="testimonial">
+                    <p>"I am extremely satisfied with the service and product quality. Highly recommended!"</p>
+                    <span>- Jane Smith</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="recommended-products">
+        <div class="container">
+            <h2>Recommended Products</h2>
+            <div class="product-container" id="recommendedProductContainer">
+                <!-- Recommended products will be added dynamically using JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Building Materials Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Shopping Cart</h2>
+            <div id="cartContent">
+                <p>Your cart is empty.</p>
+            </div>
+            <div id="cartTotal" class="cart-total">
+                <p>Total: $<span id="totalAmount">0.00</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
